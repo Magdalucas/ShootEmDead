@@ -204,7 +204,7 @@ namespace Game
 
         public static void Clear(int r = 0, int g = 0, int b = 0)
         {
-            int res = ClearInternal(r, g, b);
+             int res = ClearInternal(r, g, b);
             if (res == 1) WindowOpened = false;
         }
 

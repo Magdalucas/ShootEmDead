@@ -15,9 +15,10 @@ namespace Game
     private Animation currentAnimation;
     private Transform _playerTransform;
     private Character _player;
+        private Character2 _player2;
 
-    /* Speed Values */
-    private float _movementSpeed;
+        /* Speed Values */
+        private float _movementSpeed;
     private float _rotationSpeed;
 
     #region PUBLIC_METODS
@@ -65,8 +66,8 @@ namespace Game
         _transform.Translate(new Vector2(1, 0), _movementSpeed);
     //    _transform.Rotate(1, _rotationSpeed);
 
-        if (_transform.Position.X >= 1280 + _renderer.Texture.Width)
-            _transform.SetPositon(new Vector2(-_renderer.Texture.Width, _transform.Position.Y));
+        //if (_transform.Position.X >= 1280 + _renderer.Texture.Width)
+        //    _transform.SetPositon(new Vector2(-_renderer.Texture.Width, _transform.Position.Y));
 
         currentAnimation.Update();
         CheckCollision();
@@ -74,14 +75,13 @@ namespace Game
 
     public void CheckCollision()
     {
-
         float distanceX = Math.Abs(_player.Transform.Position.X - _transform.Position.X);
         float distanceY = Math.Abs(_player.Transform.Position.Y - _transform.Position.Y);
 
         float sumHalfWidths = _player.Renderer.Texture.Width / 2 + _renderer.Texture.Width / 2;
         float sumHalfHeights = _player.Renderer.Texture.Height / 2 + _renderer.Texture.Height / 2;
 
-        if (distanceX <= sumHalfWidths && distanceY <= sumHalfHeights)
+            if (distanceX <= sumHalfWidths && distanceY <= sumHalfHeights)
         {
                 //_player.LifeController.GetDamage(100);
                 GameManager.Instance.ChangeGameState(GameState.GameOverScreen);

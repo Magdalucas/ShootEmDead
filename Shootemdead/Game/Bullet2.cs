@@ -76,7 +76,6 @@ namespace Game
 
         public void CheckCollision()
         {
-
             float distanceX = Math.Abs(_player2.Transform.Position.X - _transform.Position.X);
             float distanceY = Math.Abs(_player2.Transform.Position.Y - _transform.Position.Y);
 
