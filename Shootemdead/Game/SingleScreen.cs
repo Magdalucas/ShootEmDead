@@ -29,6 +29,10 @@ namespace Game
                     GameManager.Instance.ChangeGameState(GameState.Level);
                 }
             }
+            if (Engine.GetKey(Keys.C))
+            {
+                GameManager.Instance.ChangeGameState(GameState.Credits);
+            }
         }
 
         public void Render()

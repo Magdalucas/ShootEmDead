@@ -23,7 +23,7 @@ namespace Game
 
         public SingleScreen GameOverScreen = new SingleScreen("Textures/Screens/GameOver.png");
         public SingleScreen WinScreen = new SingleScreen("Textures/Screens/Win.png");
-        public SingleScreen CreditsScreen = new SingleScreen("Textures/Screens/Credits.png");
+        public SingleScreen Credits = new SingleScreen("Textures/Screens/Credits.png");
         public SingleScreen MainMenuScreen = new SingleScreen("Textures/Screens/MainMenu.png");
 
         private static GameManager instance;
@@ -54,7 +54,7 @@ namespace Game
                     MainMenuScreen.Update();
                     break;
                 case GameState.Credits:
-                    CreditsScreen.Update();
+                    Credits.Update();
                     break;
                 case GameState.GameOverScreen:
                     GameOverScreen.Update();
@@ -89,7 +89,7 @@ namespace Game
                     MainMenuScreen.Render();
                     break;
                 case GameState.Credits:
-                    CreditsScreen.Render();
+                    Credits.Render();
                     break;
                 case GameState.GameOverScreen:
                     GameOverScreen.Render();

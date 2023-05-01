@@ -14,7 +14,6 @@ namespace Game
 
         private static Character _player;
         private static Character2 _player2;
-
         public static Character Player => _player;
         public static Character2 Player2 => _player2;
 
@@ -23,8 +22,8 @@ namespace Game
 
 
         public void Initialization()
-    {
-        _time.Initialize();
+        {
+             _time.Initialize();
             _player = new Character("Textures/Soldierizq/Idle1.png", new Vector2(100, 200), new Vector2(1.50f, 1.50f), 0, 150);
             _player2 = new Character2("Textures/Soldierder/Idle1.png", new Vector2(1200, 200), new Vector2(1.50f, 1.50f), 0, 175);
 
