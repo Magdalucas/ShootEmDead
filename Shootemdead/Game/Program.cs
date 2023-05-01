@@ -8,7 +8,7 @@ namespace Game
      
         static void Main(string[] args)
         {
-            Engine.Initialize("Game", 1920, 1080);
+            Engine.Initialize("Game", 1280, 720);
             Initialization();
 
             while (true)

@@ -26,7 +26,7 @@ namespace Game
     {
         _time.Initialize();
             _player = new Character("Textures/Soldierizq/Idle1.png", new Vector2(100, 200), new Vector2(1.50f, 1.50f), 0, 100);
-            _player2 = new Character2("Textures/Soldierder/Idle1.png", new Vector2(900, 200), new Vector2(1.50f, 1.50f), 0, 100);
+            _player2 = new Character2("Textures/Soldierder/Idle1.png", new Vector2(1200, 200), new Vector2(1.50f, 1.50f), 0, 100);
 
             //enemies.Add(new Enemy("Textures/ship.png", new Vector2(0, 400), new Vector2(.75f, .75f), 0, 100));
             //enemies.Add(new Enemy("Textures/ship.png", new Vector2(0, 600), new Vector2(.75f, .75f), 0, 100));
