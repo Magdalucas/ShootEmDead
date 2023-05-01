@@ -43,7 +43,7 @@ namespace Game
 
         public static void CreateBullet(Vector2 position)
         {
-            bullets.Add(new Bullet(new Vector2(Player.Transform.Position.X + 50, Player.Transform.Position.Y), new Vector2(1f, 1f), 0, 80));
+            bullets.Add(new Bullet(new Vector2(Player.Transform.Position.X + 50, Player.Transform.Position.Y), new Vector2(1f, 1f), 0, 150));
         }
 
         public static void CreateBullet2(Vector2 position)

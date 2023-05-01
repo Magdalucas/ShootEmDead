@@ -15,14 +15,8 @@ namespace Game
 
         //public event Action OnGetDamage;
 
-
-
-
-
         private int _maxHealth;
         private int currentLife;
-
-
 
         public bool IsAlive => currentLife > 0;
 

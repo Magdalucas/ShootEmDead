@@ -57,8 +57,6 @@ namespace Game
         idleAnimation = new Animation("Idle", idleTextures, 0.1f, true);
 
     }
-
-
     public void Initialize() { }
 
     public void Update()
@@ -85,8 +83,9 @@ namespace Game
 
         if (distanceX <= sumHalfWidths && distanceY <= sumHalfHeights)
         {
-                _player.LifeController.GetDamage(50);
-        }
+                //_player.LifeController.GetDamage(100);
+                GameManager.Instance.ChangeGameState(GameState.GameOverScreen);
+            }
     }
 
     public void Render()
@@ -95,8 +94,5 @@ namespace Game
     }
 
     #endregion
-         
-
-
 }
 }

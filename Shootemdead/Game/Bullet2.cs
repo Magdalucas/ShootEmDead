@@ -67,8 +67,8 @@ namespace Game
             _transform.Translate(new Vector2(1, 0), _movementSpeed);
             //    _transform.Rotate(1, _rotationSpeed);
 
-            if (_transform.Position.X >= 1280 + _renderer.Texture.Width)
-                _transform.SetPositon(new Vector2(-_renderer.Texture.Width, _transform.Position.Y));
+            //if (_transform.Position.X >= 1280 + _renderer.Texture.Width)
+            //    _transform.SetPositon(new Vector2(-_renderer.Texture.Width, _transform.Position.Y));
 
             currentAnimation.Update();
             CheckCollision();
@@ -85,7 +85,8 @@ namespace Game
 
             if (distanceX <= sumHalfWidths && distanceY <= sumHalfHeights)
             {
-                _player2.LifeController.GetDamage(50);
+                //_player2.LifeController.GetDamage(50);
+                GameManager.Instance.ChangeGameState(GameState.WinScreen);
             }
         }
 
