@@ -29,18 +29,13 @@ namespace Game
 
             _transform = new Transform(position, scale, angle);
 
-
             CreateAnimations();
             currentAnimation = idleAnimation;
             _movementSpeed = movementSpeed;
             _rotationSpeed = 100f;
 
             _renderer = new Renderer(idleAnimation, scale);
-
-
-
         }
-
         private void OnGetDamageHandler()
         {
             Engine.Debug("acá podría hacer desaparecer la bala");
